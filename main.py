@@ -1,3 +1,6 @@
+from utils import logger
+
+
 class Student:
     def __init__(self, name, surname, gender):
         self.name = name
@@ -155,33 +158,39 @@ class Reviewer(Mentor):
 
 
 #  Средняя оценка по курсу у списка студентов
+@logger(path_filename='C:/Users/konst/PycharmProjects/oop_task1/logfile.txt')
 def average_st_list(course_name, st_list):
     sum_ = 0
     count_ = 0
+    average_rate = 0
     for st in st_list:
         if not isinstance(st, Student):
             print('Not a Student')
-            return
+            return 'Not a Student'
         else:
             sum_ += sum(st.grades[course_name])
             count_ += len(st.grades[course_name])
-    print(round(sum_ / count_, 2))
-    return
+            average_rate = round(sum_ / count_, 2)
+    print(average_rate)
+    return average_rate
 
 
 #  Средняя оценка по лекциям курса у списка лекторов
+@logger(path_filename='C:/Users/konst/PycharmProjects/oop_task1/logfile.txt')
 def average_lc_list(course_name, lc_list):
     sum_ = 0
     count_ = 0
+    average_rate = 0
     for lc in lc_list:
         if not isinstance(lc, Lecturer):
             print('Not a Lecturer')
-            return
+            return 'Not a Lecturer'
         else:
             sum_ += sum(lc.grades[course_name])
             count_ += len(lc.grades[course_name])
-    print(round(sum_ / count_, 2))
-    return
+            average_rate = round(sum_ / count_, 2)
+    print(average_rate)
+    return average_rate
 
 
 best_student = Student('Ruoy', 'Eman', 'man')

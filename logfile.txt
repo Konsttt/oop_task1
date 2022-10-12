@@ -1,0 +1,5 @@
+время: 12.10.2022 11:31; имя: average_st_list; аргументы: Python, [<__main__.Student object at 0x00000250F20BEC20>, <__main__.Student object at 0x00000250F20BE470>] ; результат: 8.67 
+время: 12.10.2022 11:34; имя: average_st_list; аргументы: Python, [<__main__.Student object at 0x000001D6A3C53BE0>, <__main__.Student object at 0x000001D6A3C53B20>] ; результат: 8.67 
+время: 12.10.2022 11:34; имя: average_lc_list; аргументы: Python, [<__main__.Lecturer object at 0x000001D6A3C53AC0>, <__main__.Lecturer object at 0x000001D6A3C53A30>] ; результат: None 
+время: 12.10.2022 11:36; имя: average_st_list; аргументы: Python, [<__main__.Student object at 0x0000017760633BE0>, <__main__.Student object at 0x0000017760633B20>] ; результат: 8.67 
+время: 12.10.2022 11:36; имя: average_lc_list; аргументы: Python, [<__main__.Lecturer object at 0x0000017760633AC0>, <__main__.Lecturer object at 0x0000017760633A30>] ; результат: 10.0 
